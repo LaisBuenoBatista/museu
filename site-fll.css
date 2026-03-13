@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-margin-top: 100px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+nav {
+    width: 100%;
+    min-height: 100px;
+    background-color: #1a4104e8;
+    border: 1px solid #f4f74e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    flex-wrap: wrap; /* Faz com que os links quebrem linha no celular */
+    padding: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+nav img {
+    width: 80px;
+}
+
+nav a:hover {
+    color: #ffff00;
+}
+
+h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+ul {
+    margin: 10px 0px 0px 60px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#titulo {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50vh 2vw 0 2vw;
+    background-image: linear-gradient(#00000059, #00000059), url(img/museu.JPG);
+    background-size: cover;
+    background-position: top;
+    border: 2px solid #000000;
+}
+
+#titulo h1 {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+#titulo h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+#intro, #mp, #tour, #livro, #equipe {
+    width: 100%;
+    padding: 10px 100px 0px 100px;
+    margin-bottom: 40px;
+}
+
+#mp {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px 100px 0px 100px;
+    margin-bottom: 40px;
+}
+
+
+#tour a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#tour a:hover {
+    color: #0000ff
+}
+
+#info-tour {
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+#museu {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* QR Code e Placa ficam um sob o outro no celular */
+    gap: 20px;
+}
+
+#qrcode {
+    height: 300px;
+    border: 1px solid #0000ff91;
+    border-radius: 15px;
+    margin: 10px 100px 0px 20px;
+}
+
+#placa {
+    height: 300px;
+    border: 1px solid #00000091;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+#livro img {
+    height: 400px;
+    width: auto;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#pdf {
+    width: 100%;
+    min-height: 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Os livros ficam um sob o outro no celular */
+    gap: 100px;
+}
+
+.item-pdf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+}
+
+.item-pdf a {
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.botao {
+    width: 230px;
+    background-color: #1a41045d;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+#equipe img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+#rodape {
+    width: 100%;
+    min-height: 70px;
+    background-color: #1a4104e8;
+    padding: 0px 100px 0px 100px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#rodape h4 {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#rodape img {
+    height: 30px;
+    width: auto;
+}
+
+#rodape a {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#rodape a:hover {
+    color: #ffff00;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    h1 { font-size: 40px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 28px; }
+    p, ul { font-size: 16px; }
+}
+
+@media (max-width: 768px) {
+    #intro, #mp, #tour, #livro, #equipe {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        min-height: auto;
+    }
+    nav a {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+    nav img {
+        width: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    #rodape {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+/* ---------------------------------------------------------------------------------- */
+
